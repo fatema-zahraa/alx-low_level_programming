@@ -1,4 +1,4 @@
-#inclucde < stdio.h >
+#inclucde <stdio.h>
 /**
   *main - A program that prints the size of various computer types 
   *Returm 0 (Success)
