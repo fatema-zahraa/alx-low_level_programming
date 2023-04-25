@@ -11,8 +11,8 @@ void print_alphabet_x10(void)
 {
 	for (c = 'a'; c <= 'z'; c++)
 {
-	_putchar(c);
+	int _putchar(c);
 }
-	_putchar('\n');
+	int _putchar('\n');
 }
 }
