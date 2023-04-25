@@ -30,6 +30,7 @@ long int n1, n2, fn, fn2, n11, n22;
 	n2 = n2 / 1000000000;
 	boolean2 = 0;
 }
+{
 	fn2 = (n11 + n22);
 	n = n1 + n2 + (fn2 / 1000000000);
 	printf(", %ld", fn);
@@ -39,6 +40,8 @@ long int n1, n2, fn, fn2, n11, n22;
 	n2 = fn;
 	n22 = (fn2 % 1000000000);
 }
+	else
+{
 	if (((n1 + n2) < 0) && boolean == 1)
 	boolean = 0;
 }
