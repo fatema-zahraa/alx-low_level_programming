@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - prints all alphabets in lowercase 10 times.
- * Return: On success 1.
+ * print_alphabet_x10 - Entry poibt
+ * Description: "prints "apha 10 times.
+ * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
-	char i, k;
-
-	for (k = 0; k < 10; k++)
+int i;
+int j;
+for (i = 1; i <= 10; i++)
 {
-	for (i = 'a'; i <= 'z'; i++)
+for (j = 97; i <= 122; j++)
 {
-	_putchar(i);
+_putchar(j);
 }
-	_putchar('\n');
-	i++;
+_putchar('\n');
 }
 }
