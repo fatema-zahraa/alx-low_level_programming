@@ -1,12 +1,31 @@
 #include "main.h"
 /**
- * add - Adds two integers and returns
- * the result.
- * @a: number one.
- * @b: number two.
- * Return: Add of number one and number two.
+ * times_table - Prints the 9 times table
+ * Return: no return
  */
-int add(int a, int b)
+void times_table(void)
 {
-return (a + b);
+	int a, b, op;
+	
+for (a = 0; a <= 9; a++)
+{
+	_putchar(48);
+	for (b = 1; b <= 9; b++)
+{
+	op = a * b;
+	_putchar(44);
+	_putchar(32);
+	if (op <= 9)
+{
+	_putchar(32);
+	_putchar(op + 48);
+}
+	else
+{
+	_putchar((op / 10) + 48);
+	_putchar((op % 10) + 48);
+}
+}
+	_putchar('\n');
+}
 }
