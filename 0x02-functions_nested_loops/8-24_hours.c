@@ -4,8 +4,10 @@
  * Return:0 if succeesful.
  */
 void jack_bauer(void)
+
 {
 	int i, j, k, m;
+
 	for (i = 0; i <= 2; i++)
 {
 	for (j = 0; j <= 9; j++)
