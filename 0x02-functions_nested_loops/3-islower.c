@@ -2,17 +2,16 @@
 /**
  * _islower-check if character is lowercase.
  * @c:character to check if it islowercase.
- * Return:0-if lowercase,1-if not.
+ * Return: 1 if lowercase or 0 if anything else.
  */
-
 int _islower(int c)
 {
-if (c >= 'a' && c <= 'z')
+	if (c >= 'a' && c <= 'z')
 {
-return (1);
+	return (1);
 }
 	else
 {
-return (0);
+	return (0);
 }
 }
