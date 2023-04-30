@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- *  main - Prints the first 98 Fibonacci
- *  numbers,starting with 1 and 2,
- *  followed by a new line, separated
- *  by comma, followed by a space
- *  Return: Always 0.
- */
+*  main - Prints the first 98 Fibonacci
+*  numbers,starting with 1 and 2,
+*  followed by a new line, separated
+*  by comma, followed by a space
+*  Return: Always 0.
+*/
 int main(void)
 {
 	int count;
@@ -13,10 +13,9 @@ int main(void)
 	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 	unsigned long half1, half2;
 
-	for (count = 0; count < 92; count++)
+for (count = 0; count < 92; count++)
 {
 	sum = fib1 + fib2;
-{
 	printf("%lu, ", sum);
 	fib1 = fib2;
 	fib2 = sum;
@@ -42,7 +41,6 @@ int main(void)
 	fib2_half1 = half1;
 	fib2_half2 = half2;
 }
-printf("\n");
-}
+	printf("\n");
 	return (0);
 }
