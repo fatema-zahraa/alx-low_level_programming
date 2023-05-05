@@ -1,42 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_buffer - prints a buffer
- * @b: buffer.
- * @size: size of buffer.
- * Return: no return.
+ * main - check the code for Holberton School students.
+ * Return: Always 0.
  */
-void print_buffer(char *b, int size)
+int main(void)
 {
-	int j, k, l;
+	char *n = "10";
+	char *m = "89";
+	char r[100];
+	char *res;
 
-	if (size <= 0)
-	printf("\n");
+	res = infinite_add(n, m, r, 100);
+	if (res == 0)
+{
+	printf("Error\n");
+}
 	else
 {
-	for (j = 0; j < size; j += 10)
-{
-	printf("%.8x:", j);
-	for (k = j; k < j + 10; k++)
-{
-	if (k % 2 == 0)
-	printf(" ");
-	if (k < size)
-	printf("%.2x", *(b + k));
-	else
-	printf("  ");
+	printf("%s + %s = %s\n", n, m, res);
 }
-	printf(" ");
-	for (l = j; l < j + 10; l++)
-{
-	if (l >= size)
-	break;
-	if (*(b + l) < 32 || *(b + l) > 126)
-	printf("%c", '.');
-	else
-	printf("%c", *(b + l));
-}
-	printf("\n");
-}
-}
+	return (0);
 }
