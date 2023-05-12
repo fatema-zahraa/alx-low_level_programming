@@ -2,17 +2,17 @@
 /**
  * print_alphabet_x10 - Entry point
  * Description: "print "alpha 10 times.
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 void print_alphabet_x10(void)
+	char a, b;
+
+	for (b = 0; b < 10; b++)
 {
-int i;
-int j;
-	for (i = 1; i <= 10; i++)
+
+	for (a = 'x'; a <= 'z'; b++)
 {
-	for (j = 97; i <= 122; j++)
-{
-	_putchar(j);
+	_putchar(b);
 }
 	_putchar('\n');
 }
