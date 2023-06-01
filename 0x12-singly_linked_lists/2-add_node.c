@@ -16,12 +16,19 @@ while (str[len])
 len++;
 
 NHD = malloc(sizeof(list_t));
-if (!NHD)
+if (!NHD || *the_head)
 return (NULL);
 
-NHD->str = strdup(str);
-NHD->len = len;
+if (str)
+{
+	NHD->str = strdup(str);
+if (!NHD->str)
+{
+	return (NULL);
+}
+	NHD->len = len;
+}
 NHD->next = (*the_head);
-(*the_head) = NHD;
+	(*the_head) = NHD;
 return (*the_head);
 }
