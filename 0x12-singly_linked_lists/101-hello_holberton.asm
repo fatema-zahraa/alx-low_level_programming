@@ -1,11 +1,9 @@
-part		.text
-	global   main
-	extern    printf
+global   main
+	  extern    printf
 main:
-	  mov   edi, massege
-	  mov   eax, eax
+	  mov   edi, format
+	  xor   eax, eax
 	  call  printf
 	  mov   eax, 0
-	  return
-part		.data
-massege db `Hello, Holberton\n`,0
+	  ret
+format: db `Hello, Holberton\n`,0
